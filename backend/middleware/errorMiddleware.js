@@ -1,0 +1,13 @@
+
+const errorMiddleware = (err, req, res, next) => {
+    console.error("Server Error:", err.message);
+
+    const statusCode = err.statusCode || 500;
+
+    res.status(statusCode).json({
+        success: false,
+        message: err.message || "An unexpected server error occurred."
+    });
+};
+
+module.exports = errorMiddleware;
