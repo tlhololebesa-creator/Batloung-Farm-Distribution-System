@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://batloung-farm-api-vyh0.onrender.com/api";
 
 const fruitTypes = ["Apples", "Bananas", "Oranges", "Mangoes", "Grapes"];
 const boxSizes = ["Small", "Medium", "Large"];
